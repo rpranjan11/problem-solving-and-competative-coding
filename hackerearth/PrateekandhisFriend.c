@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    unsigned long long int a,l,i,k,X,N,j,flag=0,sum,val[1000000];
+	char party[5];
+    scanf("%ld",&a);
+    for(i=0;i<a;i++) {
+    	flag=0;
+    	scanf("%ld",&N);
+    	scanf("%ld",&X);
+    	for(k=0;k<N;k++)
+        	scanf("%ld",&val[k]);
+
+        for(l=0;l<N;l++) {
+        	sum=0;
+        	for(j=l;j<N;j++) {
+        		sum+=val[j];
+        	    if(sum>X)
+        	        break;
+        	    if(sum==X) {
+        		    flag=1;
+        		    break;
+        	    }
+        	}
+        	if(flag==1)
+        		break;
+        }
+        if(flag==1)
+        	strcpy(party,"YES");
+        else
+        	strcpy(party,"NO");
+        printf("%s\n",party);
+    }
+}
