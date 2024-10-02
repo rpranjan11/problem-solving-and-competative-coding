@@ -23,7 +23,7 @@ int main(){
 	    else
 	        chk2++;
 	}
-	if(/*sum1 == sum2 && */chk1 == chk2)
+	if(chk1 == chk2)
 	    printf("Infinite");
 	else if(chk1 > 0 && sum1 > sum2)
 	    printf("0");
