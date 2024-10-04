@@ -2,10 +2,10 @@
 
 import java.util.Scanner;
 class Solution {
-    public static void main(String args[] ){
+    public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         int t = in.nextInt();
-        while(t-- >0) {
+        while(t-- > 0) {
             String s = in.next();
             long sum = 0;
             long n = s.length();
