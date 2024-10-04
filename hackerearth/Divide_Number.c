@@ -7,8 +7,6 @@ int main() {
     scanf("%lld",&t);
     while(t--) {
         scanf("%lld",&x);
-        //if(x%2!=0)
-          //  printf("-1");
         if(x<4 || x%2==1)
             printf("-1");
         else if(x%4==0)
