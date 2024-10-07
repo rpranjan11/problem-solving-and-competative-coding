@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdio.h>
 
-int main(){
+int main() {
 	int testcase;
 	scanf("%d", &testcase); 
 	while(testcase--) {
