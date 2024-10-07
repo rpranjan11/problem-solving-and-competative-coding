@@ -14,7 +14,6 @@ int main(){
 	    if(q==0)
 	        printf("%s",s);
 	    else{
-	        //int len=strlen(s);
 	        for(int i=0;s[i]!='\0';i++){
 	            if(q && (s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u') ) {
 	                int temp=s[i];
