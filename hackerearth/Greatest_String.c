@@ -4,24 +4,24 @@
 #include <stdio.h>
 
 int main(){
-	int t;
-	scanf("%d", &t); 
-	while(t--){
-	    char s[100000];
-	    scanf("%s",s);
+	int testcase;
+	scanf("%d", &testcase); 
+	while(testcase--) {
+	    char str[100000];
+	    scanf("%s", str);
 	    int q;
-	    scanf("%d",&q);
+	    scanf("%d", &q);
 	    if(q==0)
-	        printf("%s",s);
-	    else{
-	        for(int i=0;s[i]!='\0';i++){
-	            if(q && (s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u') ) {
-	                int temp=s[i];
+	        printf("%s", str);
+	    else {
+	        for(int i=0; str[i]!='\0'; i++) {
+	            if(q && (str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u') ) {
+	                int temp = str[i];
 	                printf("%c",++temp);
 	                q--;
 	            }
 	            else
-	                printf("%c",s[i]);
+	                printf("%c",str[i]);
 	        }
 	    }
 	    printf("\n");
