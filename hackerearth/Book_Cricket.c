@@ -6,13 +6,13 @@ int main() {
 	long int Novers;
 	scanf("%d", &testcase);
 	for(int test=0; test<testcase; test++) {
-	    scanf("%ld %d ",&Novers, &players);
+	    scanf("%ld %d ", &Novers, &players);
 	    char balls[Novers*6];
 	    scanf("%s", balls);
 	    
 	    int score[players], p1=1, p2=2,strike;
 	        strike=p1;
-	        for(int k=0;k<players;k++)
+	        for(int k=0; k<players; k++)
 	           score[k]=0;
 	        
 	    for(int i=0; balls[i]!='\0'; i++) {
@@ -27,13 +27,13 @@ int main() {
 	        else if(balls[i]==54) { score[strike-1]+=6; }
 	        
 	        else if(balls[i]==87) {
-	            if(p1<p2 && strike==p1){ p1=p2+1; strike=p1; }
+	            if(p1<p2 && strike==p1) { p1=p2+1; strike=p1; }
 	            
-	            else if(p1<p2 && strike==p2){ p2=p2+1; strike=p2; }
+	            else if(p1<p2 && strike==p2) { p2=p2+1; strike=p2; }
 	           
-	            else if(p2<p1 && strike==p1){ p1=p1+1; strike=p1; }
+	            else if(p2<p1 && strike==p1) { p1=p1+1; strike=p1; }
 	            
-	            else if(p2<p1 && strike==p2){ p2=p1+1; strike=p2; }
+	            else if(p2<p1 && strike==p2) { p2=p1+1; strike=p2; }
 	        }
 	        
 	        if((i+1)%6==0) { 
@@ -52,6 +52,5 @@ int main() {
 	        
 	        else printf("Player %d: %d\n",j,score[j-1]);
 	    }
-	    
 	}
 }
