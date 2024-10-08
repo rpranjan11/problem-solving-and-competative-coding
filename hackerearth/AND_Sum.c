@@ -3,7 +3,7 @@
 #include <stdio.h>
 #define M 1000000007
 
-long long int fast_pow(long long int x,long long int n) 
+long long int fast_pow(long long int x, long long int n) 
 {
     long long int res = 1;
     while(n > 0)
@@ -18,11 +18,11 @@ long long int fast_pow(long long int x,long long int n)
 
 int main()
 {
-    long long int t;
-    scanf("%lld", &t);
-    while(t--)
+    long long int testcase;
+    scanf("%lld", &testcase);
+    while(testcase--)
     {
-        long long int n, x, p=0, i, j;
+        long long int n, x, p = 0, i, j;
         scanf("%lld", &n);
         long long int a[n], c;
         for(i=0; i<n; i++) {
