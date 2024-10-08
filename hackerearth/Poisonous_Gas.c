@@ -3,29 +3,29 @@
 #include <stdio.h>
 
 int main(){
-	int t;
-	scanf("%d", &t);
-	while(t--){
-	    long int n;
-	    scanf("%ld",&n);
-	    long long int a[n];
-	    int c=0;
-	    unsigned long long int sum=0;
-	    for(long int i=0;i<n;i++){
-	        scanf("%lld",&a[i]);
-	        if(a[i]>0)
-	            sum+=a[i];
+	int testcase;
+	scanf("%d", &testcase);
+	while(testcase--) {
+	    long int num;
+	    scanf("%ld", &num);
+	    long long int a[num];
+	    int check = 0;
+	    unsigned long long int sum = 0;
+	    for(long int i=0; i<num; i++){
+	        scanf("%lld", &a[i]);
+	        if(a[i] > 0)
+	            sum += a[i];
 	    }
-	    if(sum==0)
-	        c++;
-	    while(sum>1){
-	        if(sum%2==1){
-	            c++;
+	    if(sum == 0)
+	        check++;
+	    while(sum > 1) {
+	        if(sum%2 == 1) {
+	            check++;
 	            break;
 	        }
-	        sum=sum/2;
+	        sum = sum/2;
 	    }
-	    if(c)
+	    if(check)
 	        printf("No\n");
 	    else
 	        printf("Yes\n");
