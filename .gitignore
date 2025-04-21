@@ -1,7 +1,7 @@
-# Ignore C language codes folder
-/C language codes/
-/Competitive_Coding/
-/General_Coding/
+# C files
+General_Coding/*.c
+Competitive_Coding/*.c
+C language codes/*.c
 
 # Common files to ignore
 .DS_Store
