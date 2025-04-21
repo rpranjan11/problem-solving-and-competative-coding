@@ -1,0 +1,13 @@
+# Ignore C language codes folder
+/C language codes/
+/Competitive_Coding/
+/General_Coding/
+
+# Common files to ignore
+.DS_Store
+.idea/
+*.iml
+*.class
+*.log
+*.out
+node_modules/
